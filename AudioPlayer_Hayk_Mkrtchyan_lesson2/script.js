@@ -6,7 +6,7 @@ let data  = {
         "Levitation 21"
     ],
     
-    song : [
+    s o  ng : [
         "music/Vagharshapati Par - Dance of Vagharshapati.mp3",
         "music/The Sky Is Cloudy.mp3",
         "music/The Cave of Rebirth.mp3",
@@ -36,8 +36,8 @@ function playSong () {
     songTitle.textContent = data.title[currentSong]
     let img = document.getElementsByClassName("row1")
     img[0].style.bakcgroundImage = "url(" + data.poster[currentSong] + ")"
-    let main  = document.getElementsByClassName("main")
-    main[0].sytle.backgroundImage = "ur(" + data.poster[currentSong] + ")"
+    let main  = document.getElementById("main")
+    main.style.backgroundImage = "url(" + data.poster[currentSong] + ")"
     song.play() 
 
 }
@@ -52,4 +52,84 @@ function playOrPauseSong() {
         song.pause()
         play.src = "images/play-button-arrowhead.png"
     }
+}
+
+
+song.addEventListener("timeupdate" , function () {
+    // console.log(song.currentTime);
+    // console.log(song.duration);
+
+    let fill = document.getElementsByClassName("fill")
+
+    let position = song.currentTime / song.duration
+
+    fill[0].style.width = position * 100 + "%"
+
+
+    convertTime(song.currentTime)
+
+    if (song.ended) {
+            next()
+    }
+
+})
+
+
+
+function convertTime(seconds) {
+    
+    currentTime = document.getElementsByClassName("currentTime")
+
+    let min = Math.floor(seconds/60)
+                                                                                                         
+    let sec = Math.floor(seconds%60)
+
+
+    min = (min < 10) ? "0" + min : min;
+    sec = (sec < 10) ? "0" + sec : sec;
+
+
+    currentTime[0].textContent = min + ":" + sec
+
+}
+
+
+function totalTime(seconds) {
+    let min = Math.floor(seconds /60)
+
+    let sec = Math.floor(seconds %60)
+
+
+    min = (min < 10) ? "0" + min : min;
+    sec = (sec < 10) ? "0" + sec : sec;
+
+    currentTime[0].textContent += "/" + min + ":" + sec
+
+}
+
+
+
+
+function next() {
+    currentSong++
+
+    if (currentSong >= data.song.length) {
+        currentSong = 0
+    }
+
+    playSong()
+
+}
+
+
+function prev(params) {
+    currentSong--
+
+    if (currentSong <= 0 ) {
+       currentSong = data.song.length - 1
+
+    }
+
+    playSong()
+
 }
