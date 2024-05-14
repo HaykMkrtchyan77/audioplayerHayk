@@ -6,7 +6,7 @@ let data  = {
         "Levitation 21"
     ],
     
-    s o  ng : [
+    song : [
         "music/Vagharshapati Par - Dance of Vagharshapati.mp3",
         "music/The Sky Is Cloudy.mp3",
         "music/The Cave of Rebirth.mp3",
