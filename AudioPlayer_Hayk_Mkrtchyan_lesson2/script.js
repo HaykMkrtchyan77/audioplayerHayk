@@ -31,11 +31,13 @@ window.onload = function () {
 let currentSong = 0
 
 function playSong () {
+    console.log(currentSong);
     song.src = data.song[currentSong]
     let songTitle = document.getElementById("songTitle")
     songTitle.textContent = data.title[currentSong]
     let img = document.getElementsByClassName("row1")
-    img[0].style.bakcgroundImage = "url(" + data.poster[currentSong] + ")"
+    img[0].style.backgroundImage = "url(" + data.poster[currentSong] + ")"
+    console.log(img[0]);
     let main  = document.getElementById("main")
     main.style.backgroundImage = "url(" + data.poster[currentSong] + ")"
     song.play() 
@@ -89,8 +91,10 @@ function convertTime(seconds) {
     sec = (sec < 10) ? "0" + sec : sec;
 
 
-    currentTime[0].textContent = min + ":" + sec
 
+         currentTime[0].textContent = min + ":" + sec
+     
+    totalTime(song.duration)
 }
 
 
@@ -103,7 +107,7 @@ function totalTime(seconds) {
     min = (min < 10) ? "0" + min : min;
     sec = (sec < 10) ? "0" + sec : sec;
 
-    currentTime[0].textContent += "/" + min + ":" + sec
+    currentTime[0].textContent +=  " / " + min + ":" + sec
 
 }
 
@@ -122,8 +126,13 @@ function next() {
 }
 
 
-function prev(params) {
-    currentSong--
+function prev() {
+    
+
+
+        currentSong--
+    
+
 
     if (currentSong <= 0 ) {
        currentSong = data.song.length - 1
@@ -133,3 +142,39 @@ function prev(params) {
     playSong()
 
 }
+
+
+var mutes = document.getElementById("mute")
+
+function mute() {
+    if (song.muted){
+        song.muted = false
+        mutes.src = "images/volume.png"
+    }else{
+        song.muted = true
+        mutes.src = "images/volume-mute.png"
+        
+    }
+
+}
+
+
+
+function decrase() {
+    song.volume -= 0.2
+    if (song.volume <= 0.2) {
+        // onstorage.volume = 
+        mutes.src = "images/volume-mute.png"
+    }
+}
+
+
+
+function increase() {
+    song.volume += 0.2
+    // if () {
+        
+    // }
+    
+}
+

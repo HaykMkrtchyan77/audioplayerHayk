@@ -13,7 +13,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://gifdb.com/images/high/incredible-sound-wave-art-hxgh3rtf5v8vvh5i.gif");
+    /* background-image: url("https://gifdb.com/images/high/incredible-sound-wave-art-hxgh3rtf5v8vvh5i.gif"); */
     background-size: cover;
     filter: blur(8px);
     background-position-y: 50%;
@@ -30,13 +30,13 @@ body {
     width: 400px;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 4px 10px 10px #000080;
+    box-shadow: 2px 1px 3px 10px #535252;
 }
 
 .row1 {
     height: 40%;
     width: 100%;
-    background-image: url("https://gifdb.com/images/high/incredible-sound-wave-art-hxgh3rtf5v8vvh5i.gif");
+    background-image: url("https://i.ytimg.com/vi/5HOBekpVx_M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAT_T4YN72JAOH3FCvBbQl3l0aOxw");
     background-size: cover;
     background-position-y: 37%;
 }
@@ -76,6 +76,7 @@ body {
     width: 25px;
     background-size: cover;
     margin-top: 20px;
+    margin-left: 25px;
 }
 
 #play {
@@ -90,6 +91,7 @@ body {
     width: 25px;
     background-size: cover;
     margin-top: 20px;
+    margin-right: 25px;
 }
 
 .seek-bar{
@@ -108,7 +110,7 @@ body {
 }
 
 .fill{
-    height: 9px;
+    height: 7px;
     width: 2px;
     border-radius: 25px;
     background-color: aquamarine;
@@ -128,8 +130,8 @@ body {
 .currentTime{
     width: 50%;
     height: 100%;
-    margin-left: 35px;
-    margin-top: -60px;
+    margin-left: 33px;
+    margin-top: -44px;
     color: #00CED1;
 }
 
@@ -138,8 +140,9 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 150px;
+    justify-content:left;
+    margin-left: 100px;
+    margin-top: -80px;
 }
 
 #decrase{
