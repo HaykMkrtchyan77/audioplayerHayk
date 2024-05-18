@@ -3,21 +3,30 @@ let data  = {
         "Vagharshapati Par - Dance of Vagharshapati",
         "The Sky Is Cloudy",
         "The Cave of Rebirth",
-        "Levitation 21"
+        "Levitation 21",
+        "Masquerade waltz",
+        "La boheme",
+        "Wind of change"
     ],
     
     song : [
         "music/Vagharshapati Par - Dance of Vagharshapati.mp3",
         "music/The Sky Is Cloudy.mp3",
         "music/The Cave of Rebirth.mp3",
-        "music/Levitation 21.mp3"
+        "music/Levitation 21.mp3",
+        "music/Masquerade waltz.mp3",
+        "music/La boheme.mp3",
+        "music/Wind of change.mp3"
     ],
 
     poster : [
         "https://i.ytimg.com/vi/5HOBekpVx_M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAT_T4YN72JAOH3FCvBbQl3l0aOxw",
         "https://www.shutterstock.com/image-photo/sky-full-dark-clouds-bad-600nw-1436785388.jpg",
         "https://f4.bcbits.com/img/a4233994720_65",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-ZE3WUepa6oc1DKBsvD3B_ekZTec59WEU7zwVgT_Ww&s"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-ZE3WUepa6oc1DKBsvD3B_ekZTec59WEU7zwVgT_Ww&s",
+        "https://www.boosey.com/imagesw/shop/product/$wm1_700x0_$_1706734.jpg",
+        "https://upload.wikimedia.org/wikipedia/en/6/69/La_boh%C3%A8me_album.jpg",
+        "https://i.scdn.co/image/ab67616d0000b273787674b6a114f98cad6f834b"
     ]
 }
 
@@ -146,6 +155,7 @@ function prev() {
 
 var mutes = document.getElementById("mute")
 
+
 function mute() {
     if (song.muted){
         song.muted = false
@@ -172,9 +182,16 @@ function decrase() {
 
 function increase() {
     song.volume += 0.2
-    // if () {
+    // if (mutes.src = "images/volume-mute.png") {
         
+    // }else{
+    //     mutes.src = "images/volume.png"
     // }
     
 }
+
+
+
+
+
 
