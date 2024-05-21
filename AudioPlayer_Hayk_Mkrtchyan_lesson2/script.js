@@ -6,7 +6,9 @@ let data  = {
         "Levitation 21",
         "Masquerade waltz",
         "La boheme",
-        "Wind of change"
+        "Wind of change",
+        "Moonlight Sonata",
+        "Requiem in D Minor, K. 626_ Sequence_ VI. Lacrimosa dies illa"
     ],
     
     song : [
@@ -16,7 +18,9 @@ let data  = {
         "music/Levitation 21.mp3",
         "music/Masquerade waltz.mp3",
         "music/La boheme.mp3",
-        "music/Wind of change.mp3"
+        "music/Wind of change.mp3",
+        "music/Moonlight Sonata.mp3",
+        "music/Requiem in D Minor, K. 626_ Sequence_ VI. Lacrimosa dies illa.mp3"
     ],
 
     poster : [
@@ -26,7 +30,9 @@ let data  = {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-ZE3WUepa6oc1DKBsvD3B_ekZTec59WEU7zwVgT_Ww&s",
         "https://www.boosey.com/imagesw/shop/product/$wm1_700x0_$_1706734.jpg",
         "https://upload.wikimedia.org/wikipedia/en/6/69/La_boh%C3%A8me_album.jpg",
-        "https://i.scdn.co/image/ab67616d0000b273787674b6a114f98cad6f834b"
+        "https://i.scdn.co/image/ab67616d0000b273787674b6a114f98cad6f834b",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY3Eg6BjyNRppiCra4M-x7jCkb7-MGK5AcRLuCVPNI2Q&s",
+        "https://i.scdn.co/image/ab67616d0000b27312ca44459e62f916ac40e6f2"
     ]
 }
 
