@@ -8,7 +8,11 @@ let data  = {
         "La boheme",
         "Wind of change",
         "Moonlight Sonata",
-        "Requiem in D Minor, K. 626_ Sequence_ VI. Lacrimosa dies illa"
+        "Requiem in D Minor, K. 626_ Sequence_ VI. Lacrimosa dies illa",
+        "Emmenez-moi",
+        "Hier encore",
+        "Mes emmerdes",
+        "She"
     ],
     
     song : [
@@ -20,7 +24,11 @@ let data  = {
         "music/La boheme.mp3",
         "music/Wind of change.mp3",
         "music/Moonlight Sonata.mp3",
-        "music/Requiem in D Minor, K. 626_ Sequence_ VI. Lacrimosa dies illa.mp3"
+        "music/Requiem in D Minor, K. 626_ Sequence_ VI. Lacrimosa dies illa.mp3",
+        "music/Emmenez-moi.mp3",
+        "music/Hier encore.mp3",
+        "music/Mes emmerdes.mp3",
+        "music/She.mp3"
     ],
 
     poster : [
@@ -32,7 +40,11 @@ let data  = {
         "https://upload.wikimedia.org/wikipedia/en/6/69/La_boh%C3%A8me_album.jpg",
         "https://i.scdn.co/image/ab67616d0000b273787674b6a114f98cad6f834b",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY3Eg6BjyNRppiCra4M-x7jCkb7-MGK5AcRLuCVPNI2Q&s",
-        "https://i.scdn.co/image/ab67616d0000b27312ca44459e62f916ac40e6f2"
+        "https://i.scdn.co/image/ab67616d0000b27312ca44459e62f916ac40e6f2",
+        "https://i.scdn.co/image/ab67616d0000b2735ef15ae660d20a98d43721f1",
+        "https://i.scdn.co/image/ab67616d00001e02ff9a551232de2ac70d2ab5ca",
+        "https://i.scdn.co/image/ab67616d00001e02c5abb8ef75b5eb5d2ae1ea0c",
+        "https://images.genius.com/42a12c8ffcb5ad2902a028711dc73e07.1000x989x1.jpg"
     ]
 }
 
@@ -197,7 +209,11 @@ function increase() {
 }
 
 
-
+function cikl(){
+    currentSong--
+      if(song.ended){
+      }
+  }
 
 
 
